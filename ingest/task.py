@@ -31,6 +31,10 @@ class TaskBase(ABC):
         self._check_linked_service_exists()
 
     def _create_adf_client(self):
+        tenant_id = "b131966a-2068-4b91-aeab-577ed32cecd1"
+        client_id = "052c76eb-cdb0-4816-b25c-b90281b40a91"
+        client_secret = "DzY8Q~AwHQM8O6bHRTf1YuWkmAU~c3P-XaxwpaE8"
+        subscription_id = "5c8811c7-d0f8-4878-9960-c5e01b6bf0b1"
         credential = ClientSecretCredential(
             tenant_id=tenant_id, client_id=client_id, client_secret=client_secret
         )
